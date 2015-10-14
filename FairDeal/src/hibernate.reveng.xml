@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+    <schema-selection match-catalog="FairDeal" match-schema="dbo"/>
+    <type-mapping>
+        <sql-type jdbc-type="NVARCHAR" hibernate-type="java.lang.String"/>
+        <sql-type jdbc-type="NCHAR" hibernate-type="java.lang.String" />
+        <sql-type jdbc-type="VARCHAR" hibernate-type="java.lang.String"/>
+    </type-mapping>
+    <table-filter match-name="Role"/>
+    <table-filter match-name="Diary"/>
+    <table-filter match-name="Action"/>
+    <table-filter match-name="sysdiagrams"/>
+    <table-filter match-name="Employee"/>
+    <table-filter match-name="Customer"/>
+    <table-filter match-name="Product"/>
+    <table-filter match-name="OrderLine"/>
+    <table-filter match-name="Order"/>
+    <table-filter match-name="Role_Action"/>
+    <table-filter match-name="Category"/>
+  
+    <table name="Role" catalog="FairDeal" schema="dbo">
+        <primary-key>
+            <generator class="identity"></generator>
+            <key-column name="ID" property="id" />
+        </primary-key>
+    </table>
+    <table name="Diary" catalog="FairDeal" schema="dbo">
+        <primary-key>
+            <generator class="identity"></generator>
+            <key-column name="ID" property="id" />
+        </primary-key>
+    </table>
+    
+    <table name="Action" catalog="FairDeal" schema="dbo">
+        <primary-key>
+            <generator class="identity"></generator>
+            <key-column name="ID" property="id" />
+        </primary-key>
+    </table>
+    <table name="Employee" catalog="FairDeal" schema="dbo">
+        <primary-key>
+            <generator class="identity"></generator>
+            <key-column name="ID" property="id" />
+        </primary-key>
+    </table>
+    <table name="Customer" catalog="FairDeal" schema="dbo">
+        <primary-key>
+            <generator class="identity"></generator>
+            <key-column name="ID" property="id" />
+        </primary-key>
+    </table>
+    <table name="Product" catalog="FairDeal" schema="dbo">
+        <primary-key>
+            <generator class="identity"></generator>
+            <key-column name="ID" property="id" />
+        </primary-key>
+    </table>
+    <table name="Order" catalog="FairDeal" schema="dbo">
+        <primary-key>
+            <generator class="identity"></generator>
+            <key-column name="ID" property="id" />
+        </primary-key>
+    </table>
+    <table name="Category" catalog="FairDeal" schema="dbo">
+        <primary-key>
+            <generator class="identity"></generator>
+            <key-column name="ID" property="id" />
+        </primary-key>
+    </table>
+    <table name="OrderLine" catalog="FairDeal" schema="dbo">
+        <primary-key>
+            <generator class="identity"></generator>
+            <key-column name="ID" property="id" />
+        </primary-key>
+    </table>
+    <table name="Role_Action" catalog="FairDeal" schema="dbo">
+        <primary-key>
+            <generator class="identity"></generator>
+            <key-column name="ID" property="id" />
+        </primary-key>
+    </table>
+  
+</hibernate-reverse-engineering>
